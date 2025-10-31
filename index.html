@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Chandeliya - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold">AC.</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600">Home</a>
+                    <a href="#about" class="hover:text-blue-600">About</a>
+                    <a href="#experience" class="hover:text-blue-600">Experience</a>
+                    <a href="#skills" class="hover:text-blue-600">Skills</a>
+                    <a href="#projects" class="hover:text-blue-600">Projects</a>
+                    <a href="#resume" class="hover:text-blue-600">Resume</a>
+                    <a href="#contact" class="hover:text-blue-600">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-blue-600 focus:outline-none" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4">
+                <a href="#home" class="block py-2 hover:text-blue-600">Home</a>
+                <a href="#about" class="block py-2 hover:text-blue-600">About</a>
+                <a href="#experience" class="block py-2 hover:text-blue-600">Experience</a>
+                <a href="#skills" class="block py-2 hover:text-blue-600">Skills</a>
+                <a href="#projects" class="block py-2 hover:text-blue-600">Projects</a>
+                <a href="#resume" class="block py-2 hover:text-blue-600">Resume</a>
+                <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="text-center text-white" data-aos="fade-up">
+            <h1 class="text-5xl font-bold mb-4">Aditya Chandeliya</h1>
+            <p class="text-xl mb-4">Senior Software Engineer @ Mastercard</p>
+            <p class="text-lg mb-8">Java | Spring Boot | Microservices | Event-Driven Architecture</p>
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="mailto:adityachandeliya@gmail.com" class="bg-white text-gray-800 px-6 py-2 rounded-full hover:bg-gray-100 transition">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </a>
+                <a href="tel:+917049777421" class="bg-white text-gray-800 px-6 py-2 rounded-full hover:bg-gray-100 transition">
+                    <i class="fas fa-phone mr-2"></i>+91 7049777421
+                </a>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/imchandeliya" target="_blank" class="bg-white text-gray-800 px-6 py-2 rounded-full hover:bg-gray-100 transition">
+                    <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+                <a href="https://linkedin.com/in/adityachandeliya" target="_blank" class="bg-white text-gray-800 px-6 py-2 rounded-full hover:bg-gray-100 transition">
+                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">About Me</h2>
+            <div class="max-w-3xl mx-auto text-gray-600" data-aos="fade-up" data-aos-delay="200">
+                <p class="mb-6">
+                    Experienced software developer with 7 years of expertise building scalable, event-driven Spring Boot
+                    applications across domains like Payments, Logistics, and Finance. Skilled in Java (8–17), Kafka, REST APIs, 
+                    and microservice architecture with a strong focus on clean code, secure design, and cloud deployment (GCP, PCF).
+                    Proven ability to lead end-to-end development, optimize system performance, and contribute to
+                    architecture decisions in agile environments.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 mt-8">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2">Education</h3>
+                        <p class="text-gray-700">Computer Science and Engineering</p>
+                        <p class="text-gray-700">Bachelor of Engineering</p>
+                        <p class="text-gray-600">Devi Ahilya University, Indore, MP | 2014 - 2018</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2">Domains</h3>
+                        <ul class="text-gray-700 list-disc list-inside">
+                            <li>Payments</li>
+                            <li>Logistics</li>
+                            <li>Banking and Finance</li>
+                            <li>FMCG</li>
+                            <li>Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- Current Experience - Mastercard -->
+                <div class="mb-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Software Engineer 2</h3>
+                            <p class="text-blue-600">Mastercard</p>
+                            <p class="text-gray-500">Pune, MH</p>
+                        </div>
+                        <p class="text-gray-600">Feb 2025 - Present</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="text-sm text-gray-500 italic">Java 17, Springboot 3, Microservices, Event Driven Architecture, Pivotal Cloud Foundry, Kafka, Jenkins, RestAPI, Oracle SQL, Bitbucket, SonarQube</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Developed and maintained high-throughput, event-driven microservices for Mastercard's commercial payments platform</li>
+                        <li>Architected and implemented scalable core payment features with Kafka integration</li>
+                        <li>Deployed services on Pivotal Cloud Foundry with automated CI/CD pipelines</li>
+                        <li>Built RESTful APIs aligned with industry standards for performance and security</li>
+                        <li>Led architectural discussions and authored Architecture Decision Records (ADRs)</li>
+                        <li>Enforced code quality through rigorous reviews and SonarQube analysis</li>
+                    </ul>
+                </div>
+
+                <!-- ThoughtWorks Experience -->
+                <div class="mb-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Application Developer Consultant</h3>
+                            <p class="text-blue-600">ThoughtWorks</p>
+                            <p class="text-gray-500">Pune, MH</p>
+                        </div>
+                        <p class="text-gray-600">Feb 2022 - Feb 2025</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="text-sm text-gray-500 italic">Java 8-17, Springboot 3, Microservices, Event-driven, Hexagonal Architecture, Kafka, GCP, Docker, Terraform</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Created robust, optimized, and event-driven microservices for high-volume logistics processing</li>
+                        <li>Implemented Hexagonal architecture separating core processing & event handling</li>
+                        <li>Maintained cloud infrastructure on GCP using Terraform</li>
+                        <li>Created custom Spring Library for cross-cutting concerns</li>
+                        <li>Implemented security with OWASP scanning tools</li>
+                    </ul>
+                </div>
+
+                <!-- TCS Experience -->
+                <div class="mb-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="150">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Systems Engineer</h3>
+                            <p class="text-blue-600">Tata Consultancy Services</p>
+                            <p class="text-gray-500">Pune, MH</p>
+                        </div>
+                        <p class="text-gray-600">Apr 2021 - Feb 2022</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="text-sm text-gray-500 italic">Java 8, Springboot, Microservices, RestAPI, MySQL, JUnit, JasperReports</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Developed in-house auditing platform using Spring Boot and MVC architecture</li>
+                        <li>Created PDF/HTML reports using JasperReports and custom templates</li>
+                        <li>Managed database operations ensuring data integrity and performance</li>
+                    </ul>
+                </div>
+
+                <!-- Walkover Experience -->
+                <div class="mb-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Software Developer</h3>
+                            <p class="text-blue-600">Walkover Web Solutions</p>
+                            <p class="text-gray-500">Indore, MP</p>
+                        </div>
+                        <p class="text-gray-600">Apr 2019 - Mar 2021</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="text-sm text-gray-500 italic">Java 8, Springboot, RestAPI, PostgreSQL, MongoDB, JUnit</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Core developer for GST-compliant accounting solution Giddh</li>
+                        <li>Implemented automatic amount settlement feature for voucher adjustments</li>
+                        <li>Created Audit Logging feature using MongoDB</li>
+                        <li>Integrated third-party services including Shopify API and Apple Login</li>
+                    </ul>
+                </div>
+
+                <!-- Other Experiences -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="250">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Other Experience</h3>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-semibold text-gray-800">Associate Application Developer - Accenture</p>
+                            <p class="text-gray-600">May 2018 - Mar 2019</p>
+                            <p class="text-gray-600 mt-2">Automated report preparation process reducing time by 80% using Python scripts</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Educator/Tutor - Unacademy</p>
+                            <p class="text-gray-600">Jun 2017 - Aug 2017</p>
+                            <p class="text-gray-600 mt-2">Created Java programming tutorials reaching 5000+ followers with 18000+ watch time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Skills</h2>
+            
+            <!-- Backend Skills -->
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold mb-6 text-center" data-aos="fade-up">Backend Technologies</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in">
+                        <i class="fab fa-java text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold">Java</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-leaf text-4xl text-green-600 mb-4"></i>
+                        <h3 class="font-semibold">Spring Boot</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-server text-4xl text-purple-600 mb-4"></i>
+                        <h3 class="font-semibold">Microservices</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="font-semibold">SQL & NoSQL</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold mb-6 text-center" data-aos="fade-up">Cloud & DevOps</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in">
+                        <i class="fab fa-aws text-4xl text-orange-400 mb-4"></i>
+                        <h3 class="font-semibold">AWS</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fab fa-docker text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="font-semibold">Docker</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fab fa-jenkins text-4xl text-red-400 mb-4"></i>
+                        <h3 class="font-semibold">Jenkins</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fab fa-git-alt text-4xl text-orange-600 mb-4"></i>
+                        <h3 class="font-semibold">Git</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend Skills -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 text-center" data-aos="fade-up">Frontend Technologies</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in">
+                        <i class="fab fa-js text-4xl text-yellow-400 mb-4"></i>
+                        <h3 class="font-semibold">JavaScript</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fab fa-react text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="font-semibold">React</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fab fa-html5 text-4xl text-red-500 mb-4"></i>
+                        <h3 class="font-semibold">HTML5/CSS3</h3>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fab fa-bootstrap text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="font-semibold">Bootstrap</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Key Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Commercial Payments Platform -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-3">Commercial Payments Platform</h3>
+                    <p class="text-gray-600 mb-4">High-throughput payment processing system for Mastercard</p>
+                    <div class="mb-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Java 17</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Spring Boot 3</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Kafka</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li>Event-driven microservices</li>
+                        <li>High-throughput processing</li>
+                        <li>Secure payment handling</li>
+                        <li>Cloud-native architecture</li>
+                    </ul>
+                </div>
+
+                <!-- Logistics Processing System -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-3">Logistics Processing System</h3>
+                    <p class="text-gray-600 mb-4">Event-driven logistics management platform</p>
+                    <div class="mb-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Java 8-17</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">GCP</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Pub/Sub</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li>Hexagonal architecture</li>
+                        <li>High-volume data processing</li>
+                        <li>Cloud infrastructure</li>
+                        <li>Custom Spring Library</li>
+                    </ul>
+                </div>
+
+                <!-- Giddh Accounting Platform -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-3">Giddh Accounting Platform</h3>
+                    <p class="text-gray-600 mb-4">GST-compliant accounting solution</p>
+                    <div class="mb-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Java 8</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">Spring Boot</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm px-2 py-1 rounded mr-2 mb-2">MongoDB</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li>Automated settlements</li>
+                        <li>Third-party integrations</li>
+                        <li>Audit logging system</li>
+                        <li>RESTful API architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Resume</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Technical Proficiencies -->
+                    <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-right">
+                        <h3 class="text-xl font-bold mb-4">Technical Proficiencies</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold">Programming Languages</h4>
+                                <p class="text-gray-600">Java (8-17), Python, Bash</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Frameworks & Libraries</h4>
+                                <p class="text-gray-600">Spring Boot, Java Persistence API, Hibernate, Jackson, Spring Security, Jakarta, ShedLock, Spring Cloud Function</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Architecture & Design</h4>
+                                <p class="text-gray-600">Microservices, Hexagonal, MVC, Event-driven, Domain-driven</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Communication & Messaging</h4>
+                                <p class="text-gray-600">REST API, Kafka, Google Pub/Sub</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Databases</h4>
+                                <p class="text-gray-600">Oracle SQL, PostgreSQL, Google Datastore, Google BigQuery</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Cloud & Infrastructure</h4>
+                                <p class="text-gray-600">Pivotal Cloud Foundry, GCP, Docker, Terraform</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Tools & Development</h4>
+                                <p class="text-gray-600">Gradle, Maven, JUnit, Mockito, IntelliJ, VS Code, Bitbucket, Jenkins, Git, RapidAPI, Sonarqube</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Analytics</h4>
+                                <p class="text-gray-600">BigQuery, Splunk</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Achievements -->
+                    <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-left">
+                        <h3 class="text-xl font-bold mb-4">Key Achievements</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Led successful migration from monolithic to microservices architecture, improving scalability by 200%</li>
+                            <li>Reduced application response time by 40% through performance optimization</li>
+                            <li>Automated deployment processes reducing manual effort by 70%</li>
+                            <li>Implemented resilient architecture reducing system downtime by 80%</li>
+                            <li>Mentored 15+ junior developers improving team productivity by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Download Resume Button -->
+                <div class="text-center">
+                    <a href="./assets/resume_aditya_chandeliya.pdf" 
+                       target="_blank"
+                       class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition"
+                       data-aos="fade-up">
+                        <i class="fas fa-download mr-2"></i>
+                        Download Complete Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contact Me</h2>
+            <div class="max-w-md mx-auto">
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:imchandeliya@gmail.com" class="text-gray-600 hover:text-blue-600" title="Email">
+                        <i class="fas fa-envelope text-4xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/aditya-chandeliya" target="_blank" class="text-gray-600 hover:text-blue-600" title="LinkedIn">
+                        <i class="fab fa-linkedin text-4xl"></i>
+                    </a>
+                    <a href="https://github.com/imchandeliya" target="_blank" class="text-gray-600 hover:text-blue-600" title="GitHub">
+                        <i class="fab fa-github text-4xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Aditya Chandeliya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
