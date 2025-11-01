@@ -8,11 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="src/styles/output.css">
 </head>
 <body class="bg-gray-100">
     <!-- Navigation -->
@@ -107,6 +103,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Experience Section -->
+        <!-- Projects Section -->
+    <div id="projects-content"></div>
+
+    <!-- Resume Section -->
+    <div id="resume-content"></div>
+
+    <!-- Contact Section -->
+    <div id="contact-content"></div>
+
+    <!-- Footer -->
 
     <!-- Experience Section -->
     <section id="experience" class="py-20 bg-gray-50">
@@ -256,8 +264,8 @@
                 <h3 class="text-xl font-semibold mb-6 text-center" data-aos="fade-up">Cloud & DevOps</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in">
-                        <i class="fab fa-aws text-4xl text-orange-400 mb-4"></i>
-                        <h3 class="font-semibold">AWS</h3>
+                        <i class="fab fa-google text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="font-semibold">Google Cloud</h3>
                     </div>
                     <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fab fa-docker text-4xl text-blue-400 mb-4"></i>
@@ -270,29 +278,6 @@
                     <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="300">
                         <i class="fab fa-git-alt text-4xl text-orange-600 mb-4"></i>
                         <h3 class="font-semibold">Git</h3>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Frontend Skills -->
-            <div>
-                <h3 class="text-xl font-semibold mb-6 text-center" data-aos="fade-up">Frontend Technologies</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in">
-                        <i class="fab fa-js text-4xl text-yellow-400 mb-4"></i>
-                        <h3 class="font-semibold">JavaScript</h3>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
-                        <i class="fab fa-react text-4xl text-blue-400 mb-4"></i>
-                        <h3 class="font-semibold">React</h3>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fab fa-html5 text-4xl text-red-500 mb-4"></i>
-                        <h3 class="font-semibold">HTML5/CSS3</h3>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="300">
-                        <i class="fab fa-bootstrap text-4xl text-purple-500 mb-4"></i>
-                        <h3 class="font-semibold">Bootstrap</h3>
                     </div>
                 </div>
             </div>
@@ -361,59 +346,52 @@
     <!-- Resume Section -->
     <section id="resume" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Resume</h2>
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Technical Proficiencies</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="mb-12">
                     <!-- Technical Proficiencies -->
-                    <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-right">
-                        <h3 class="text-xl font-bold mb-4">Technical Proficiencies</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="font-semibold">Programming Languages</h4>
-                                <p class="text-gray-600">Java (8-17), Python, Bash</p>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-up">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Programming Languages</h4>
+                                    <p class="text-gray-600">Java (8-17), Python, Bash</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Frameworks & Libraries</h4>
+                                    <p class="text-gray-600">Spring Boot, Java Persistence API, Hibernate, Jackson, Spring Security, Jakarta, ShedLock, Spring Cloud Function</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Architecture & Design</h4>
+                                    <p class="text-gray-600">Microservices, Hexagonal, MVC, Event-driven, Domain-driven</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Communication & Messaging</h4>
+                                    <p class="text-gray-600">REST API, Kafka, Google Pub/Sub</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-semibold">Frameworks & Libraries</h4>
-                                <p class="text-gray-600">Spring Boot, Java Persistence API, Hibernate, Jackson, Spring Security, Jakarta, ShedLock, Spring Cloud Function</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Architecture & Design</h4>
-                                <p class="text-gray-600">Microservices, Hexagonal, MVC, Event-driven, Domain-driven</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Communication & Messaging</h4>
-                                <p class="text-gray-600">REST API, Kafka, Google Pub/Sub</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Databases</h4>
-                                <p class="text-gray-600">Oracle SQL, PostgreSQL, Google Datastore, Google BigQuery</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Cloud & Infrastructure</h4>
-                                <p class="text-gray-600">Pivotal Cloud Foundry, GCP, Docker, Terraform</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Tools & Development</h4>
-                                <p class="text-gray-600">Gradle, Maven, JUnit, Mockito, IntelliJ, VS Code, Bitbucket, Jenkins, Git, RapidAPI, Sonarqube</p>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Analytics</h4>
-                                <p class="text-gray-600">BigQuery, Splunk</p>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Databases</h4>
+                                    <p class="text-gray-600">Oracle SQL, PostgreSQL, Google Datastore, Google BigQuery</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Cloud & Infrastructure</h4>
+                                    <p class="text-gray-600">Pivotal Cloud Foundry, GCP, Docker, Terraform</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Tools & Development</h4>
+                                    <p class="text-gray-600">Gradle, Maven, JUnit, Mockito, IntelliJ, VS Code, Bitbucket, Jenkins, Git, RapidAPI, Sonarqube</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-600">Analytics</h4>
+                                    <p class="text-gray-600">BigQuery, Splunk</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
                     
-                    <!-- Professional Achievements -->
-                    <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-left">
-                        <h3 class="text-xl font-bold mb-4">Key Achievements</h3>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li>Led successful migration from monolithic to microservices architecture, improving scalability by 200%</li>
-                            <li>Reduced application response time by 40% through performance optimization</li>
-                            <li>Automated deployment processes reducing manual effort by 70%</li>
-                            <li>Implemented resilient architecture reducing system downtime by 80%</li>
-                            <li>Mentored 15+ junior developers improving team productivity by 40%</li>
-                        </ul>
-                    </div>
                 </div>
                 
                 <!-- Download Resume Button -->
@@ -439,7 +417,7 @@
                     <a href="mailto:imchandeliya@gmail.com" class="text-gray-600 hover:text-blue-600" title="Email">
                         <i class="fas fa-envelope text-4xl"></i>
                     </a>
-                    <a href="https://linkedin.com/in/aditya-chandeliya" target="_blank" class="text-gray-600 hover:text-blue-600" title="LinkedIn">
+                    <a href="https://linkedin.com/in/adityachandeliya" target="_blank" class="text-gray-600 hover:text-blue-600" title="LinkedIn">
                         <i class="fab fa-linkedin text-4xl"></i>
                     </a>
                     <a href="https://github.com/imchandeliya" target="_blank" class="text-gray-600 hover:text-blue-600" title="GitHub">
@@ -459,6 +437,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/js/main.js" type="module"></script>
     <script>
         AOS.init({
             duration: 800,
@@ -478,14 +457,20 @@
             });
         });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // Load all sections
+        document.addEventListener('DOMContentLoaded', async () => {
+            const sections = ['experience', 'skills', 'projects', 'resume', 'contact'];
+            
+            try {
+                for (const section of sections) {
+                    const response = await fetch(`src/components/${section}.html`);
+                    if (!response.ok) throw new Error(`Failed to load ${section} section`);
+                    const html = await response.text();
+                    document.getElementById(`${section}-content`).innerHTML = html;
+                }
+            } catch (error) {
+                console.error('Error loading components:', error);
+            }
         });
     </script>
 </body>

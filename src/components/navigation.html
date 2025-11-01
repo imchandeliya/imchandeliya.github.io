@@ -1,0 +1,33 @@
+<!-- Navigation Component -->
+<nav class="fixed w-full bg-white shadow-md z-50 transition-transform duration-300">
+    <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+            <div class="text-xl font-bold">AC.</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#experience" class="hover:text-blue-600">Experience</a>
+                <a href="#skills" class="hover:text-blue-600">Skills</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#resume" class="hover:text-blue-600">Resume</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-blue-600 focus:outline-none" data-mobile-menu-button>
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-4">
+            <a href="#home" class="block py-2 hover:text-blue-600">Home</a>
+            <a href="#about" class="block py-2 hover:text-blue-600">About</a>
+            <a href="#experience" class="block py-2 hover:text-blue-600">Experience</a>
+            <a href="#skills" class="block py-2 hover:text-blue-600">Skills</a>
+            <a href="#projects" class="block py-2 hover:text-blue-600">Projects</a>
+            <a href="#resume" class="block py-2 hover:text-blue-600">Resume</a>
+            <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
+        </div>
+    </div>
+</nav>
